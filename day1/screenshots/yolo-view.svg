@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="1200" height="700">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#050506"/>
+      <stop offset="100%" stop-color="#020203"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bg2)"/>
+  <ellipse cx="600" cy="350" rx="260" ry="190" fill="#10b981" fill-opacity="0.04"/>
+
+  <!-- TOP HEADER -->
+  <rect width="1200" height="56" fill="#050506" fill-opacity="0.9"/>
+  <rect width="1200" height="1" y="56" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="24" cy="28" r="5" fill="#3b82f6">
+    <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="36" y="33" font-family="monospace" font-size="12" font-weight="600" fill="#ffffff" letter-spacing="2">AEGIS OBSERVABILITY CONSOLE</text>
+  <text x="230" y="33" font-family="monospace" font-size="11" fill="#3b82f6" fill-opacity="0.8">v2.4.0</text>
+  <text x="900" y="33" font-family="monospace" font-size="10" fill="#3b82f6" letter-spacing="2">SYSTEM: HEALTHY</text>
+  <text x="1040" y="33" font-family="monospace" font-size="10" fill="#64748b" letter-spacing="2">CLUSTER: US-EAST-1</text>
+
+  <!-- LEFT SIDEBAR -->
+  <rect x="0" y="57" width="256" height="595" fill="#050506" fill-opacity="0.8"/>
+  <rect x="255" y="57" width="1" height="595" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="20" cy="84" r="4" fill="#3b82f6"/>
+  <text x="32" y="89" font-family="monospace" font-size="9" fill="#64748b" letter-spacing="3">MODEL METADATA</text>
+
+  <rect x="12" y="100" width="232" height="48" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+  <text x="20" y="116" font-family="monospace" font-size="9" fill="#64748b">ACTIVE MODEL</text>
+  <text x="20" y="136" font-family="monospace" font-size="11" fill="#ffffff" font-weight="600" letter-spacing="1">YOLOV11-EXTREME</text>
+
+  <g font-family="monospace" font-size="10" fill="#94a3b8">
+    <text x="20" y="170">Architecture</text><text x="180" y="170" fill="#ffffff" font-size="9">CSP-Darknet-v11</text>
+    <line x1="12" y1="178" x2="244" y2="178" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="196">Parameters</text><text x="180" y="196" fill="#ffffff">58.4M</text>
+    <line x1="12" y1="204" x2="244" y2="204" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="222">Device</text><text x="180" y="222" fill="#3b82f6" font-family="monospace">L40S</text>
+    <line x1="12" y1="230" x2="244" y2="230" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="248">Precision</text><text x="180" y="248" fill="#ffffff">FP16</text>
+    <line x1="12" y1="256" x2="244" y2="256" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="274">Resolution</text><text x="180" y="274" fill="#ffffff">640×640</text>
+    <line x1="12" y1="282" x2="244" y2="282" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="300">Batch Size</text><text x="180" y="300" fill="#ffffff">1</text>
+    <line x1="12" y1="308" x2="244" y2="308" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="326">Memory</text><text x="180" y="326" fill="#ffffff">1.2 GB</text>
+    <line x1="12" y1="334" x2="244" y2="334" stroke="#ffffff" stroke-opacity="0.05"/>
+    <text x="20" y="352">Status</text>
+    <rect x="172" y="340" width="72" height="18" rx="4" fill="#10b981" fill-opacity="0.15"/>
+    <text x="208" y="353" text-anchor="middle" fill="#10b981" font-size="9" letter-spacing="1">STREAMING</text>
+  </g>
+
+  <rect x="12" y="580" width="232" height="60" rx="6" fill="#3b82f6" fill-opacity="0.05" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="20" y="598" font-family="monospace" font-size="9" fill="#3b82f6" letter-spacing="3">THROUGHPUT</text>
+  <text x="20" y="626" font-family="monospace" font-size="26" fill="#ffffff" font-weight="300">185</text>
+  <text x="80" y="626" font-family="monospace" font-size="10" fill="#3b82f6" fill-opacity="0.6">FPS</text>
+
+  <!-- MAIN AREA -->
+  <text x="276" y="86" font-family="monospace" font-size="12" fill="#ffffff" font-weight="500">Real-Time Object Detection Pipeline</text>
+  <text x="276" y="86" font-family="monospace" font-size="12" fill="#64748b" dx="280">— Backbone v11</text>
+  <text x="276" y="102" font-family="monospace" font-size="10" fill="#475569">Neural feature extraction and classification stream.</text>
+
+  <!-- Workspace card -->
+  <rect x="276" y="114" width="644" height="430" rx="16" fill="#000000" fill-opacity="0.4" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+  <!-- CV pipeline label -->
+  <text x="296" y="145" font-family="monospace" font-size="10" fill="#10b981" fill-opacity="0.6">⬡ REAL-TIME CV PIPELINE</text>
+
+  <!-- Stage 4: Detection bounding boxes on a simulated camera frame -->
+  <rect x="308" y="160" width="580" height="350" rx="8" fill="#0a0a0f" stroke="#10b981" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Scan line animation indicator -->
+  <rect x="308" y="160" width="580" height="2" rx="1" fill="#10b981" fill-opacity="0.3"/>
+
+  <!-- Abstract "street scene" dark blocks -->
+  <rect x="320" y="240" width="120" height="200" rx="2" fill="#0f172a"/>
+  <rect x="460" y="280" width="80" height="160" rx="2" fill="#0f172a"/>
+  <rect x="580" y="260" width="160" height="180" rx="2" fill="#0f172a"/>
+  <rect x="760" y="300" width="100" height="140" rx="2" fill="#0f172a"/>
+
+  <!-- Bounding box: Person -->
+  <rect x="340" y="230" width="80" height="180" rx="2" fill="none" stroke="#10b981" stroke-width="2"/>
+  <rect x="340" y="230" width="80" height="18" rx="2" fill="#10b981" fill-opacity="0.9"/>
+  <text x="344" y="243" font-family="monospace" font-size="10" fill="#000000" font-weight="700">Person 98%</text>
+
+  <!-- Bounding box: Car -->
+  <rect x="570" y="255" width="180" height="130" rx="2" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="570" y="255" width="100" height="18" rx="2" fill="#3b82f6" fill-opacity="0.9"/>
+  <text x="574" y="268" font-family="monospace" font-size="10" fill="#ffffff" font-weight="700">Car 94%</text>
+
+  <!-- Bounding box: Bicycle -->
+  <rect x="460" y="290" width="90" height="120" rx="2" fill="none" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="460" y="290" width="96" height="18" rx="2" fill="#f59e0b" fill-opacity="0.9"/>
+  <text x="464" y="303" font-family="monospace" font-size="10" fill="#000000" font-weight="700">Bicycle 91%</text>
+
+  <!-- Grid overlay (subtle) -->
+  <line x1="308" y1="260" x2="888" y2="260" stroke="#10b981" stroke-opacity="0.04"/>
+  <line x1="308" y1="340" x2="888" y2="340" stroke="#10b981" stroke-opacity="0.04"/>
+  <line x1="308" y1="420" x2="888" y2="420" stroke="#10b981" stroke-opacity="0.04"/>
+  <line x1="448" y1="160" x2="448" y2="510" stroke="#10b981" stroke-opacity="0.04"/>
+  <line x1="598" y1="160" x2="598" y2="510" stroke="#10b981" stroke-opacity="0.04"/>
+  <line x1="748" y1="160" x2="748" y2="510" stroke="#10b981" stroke-opacity="0.04"/>
+
+  <!-- Crosshair corners -->
+  <g stroke="#10b981" stroke-width="1.5" fill="none" stroke-opacity="0.5">
+    <path d="M316 168 L316 180 M316 168 L328 168"/>
+    <path d="M880 168 L880 180 M880 168 L868 168"/>
+    <path d="M316 502 L316 490 M316 502 L328 502"/>
+    <path d="M880 502 L880 490 M880 502 L868 502"/>
+  </g>
+
+  <!-- Node counter -->
+  <text x="760" y="178" font-family="monospace" font-size="9" fill="#10b981" fill-opacity="0.7">DETECTIONS: 03</text>
+  <text x="760" y="192" font-family="monospace" font-size="9" fill="#64748b">NMS: 100%</text>
+
+  <!-- BOTTOM CONTROLS -->
+  <rect x="276" y="552" width="644" height="96" fill="#050506" fill-opacity="0.4"/>
+  <rect x="276" y="552" width="644" height="1" fill="#ffffff" fill-opacity="0.05"/>
+
+  <rect x="288" y="566" width="220" height="44" rx="10" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <text x="398" y="593" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle" letter-spacing="2">TRANSFORMER ATTENTION</text>
+
+  <rect x="520" y="566" width="200" height="44" rx="10" fill="#3b82f6" fill-opacity="0.2" stroke="#3b82f6" stroke-opacity="0.5" stroke-width="1"/>
+  <text x="620" y="593" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle" letter-spacing="2">YOLO INFERENCE</text>
+
+  <rect x="806" y="566" width="100" height="44" rx="10" fill="#2563eb"/>
+  <text x="856" y="593" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="600" letter-spacing="2">▶ RUN</text>
+
+  <!-- RIGHT SIDEBAR -->
+  <rect x="924" y="57" width="276" height="595" fill="#050506" fill-opacity="0.8"/>
+  <rect x="924" y="57" width="1" height="595" fill="#ffffff" fill-opacity="0.05"/>
+  <circle cx="940" cy="84" r="4" fill="#3b82f6"/>
+  <text x="952" y="89" font-family="monospace" font-size="9" fill="#64748b" letter-spacing="3">LIVE TELEMETRY</text>
+
+  <text x="936" y="116" font-family="monospace" font-size="9" fill="#94a3b8" letter-spacing="1">GPU UTILIZATION</text>
+  <text x="1176" y="116" font-family="monospace" font-size="9" fill="#3b82f6" text-anchor="end">88%</text>
+  <rect x="936" y="122" width="240" height="4" rx="2" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="936" y="122" width="211" height="4" rx="2" fill="#3b82f6"/>
+
+  <text x="936" y="148" font-family="monospace" font-size="9" fill="#94a3b8" letter-spacing="1">VRAM USAGE</text>
+  <text x="1176" y="148" font-family="monospace" font-size="9" fill="#8b5cf6" text-anchor="end">1.2 / 80 GB</text>
+  <rect x="936" y="154" width="240" height="4" rx="2" fill="#ffffff" fill-opacity="0.05"/>
+  <rect x="936" y="154" width="4" height="4" rx="2" fill="#8b5cf6"/>
+
+  <rect x="936" y="172" width="112" height="56" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.05"/>
+  <text x="944" y="188" font-family="monospace" font-size="8" fill="#64748b" letter-spacing="1">LATENCY</text>
+  <text x="944" y="214" font-family="monospace" font-size="18" fill="#ffffff">5.4ms</text>
+
+  <rect x="1056" y="172" width="112" height="56" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.05"/>
+  <text x="1064" y="188" font-family="monospace" font-size="8" fill="#64748b" letter-spacing="1">FPS</text>
+  <text x="1064" y="214" font-family="monospace" font-size="18" fill="#ffffff">185</text>
+
+  <rect x="936" y="236" width="112" height="56" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.05"/>
+  <text x="944" y="252" font-family="monospace" font-size="8" fill="#64748b" letter-spacing="1">DETECTIONS</text>
+  <text x="944" y="278" font-family="monospace" font-size="18" fill="#ffffff">12</text>
+
+  <rect x="1056" y="236" width="112" height="56" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.05"/>
+  <text x="1064" y="252" font-family="monospace" font-size="8" fill="#64748b" letter-spacing="1">Q-DEPTH</text>
+  <text x="1064" y="278" font-family="monospace" font-size="18" fill="#ffffff">04</text>
+
+  <text x="936" y="316" font-family="monospace" font-size="9" fill="#64748b" letter-spacing="3">INFERENCE ACTIVITY</text>
+  <g fill="#3b82f6" fill-opacity="0.2">
+    <rect x="936" y="348" width="12" height="42" rx="2"/>
+    <rect x="952" y="332" width="12" height="58" rx="2"/>
+    <rect x="968" y="340" width="12" height="50" rx="2"/>
+    <rect x="984" y="320" width="12" height="70" rx="2"/>
+    <rect x="1000" y="335" width="12" height="55" rx="2" fill="#3b82f6" fill-opacity="0.8"/>
+    <rect x="1016" y="326" width="12" height="64" rx="2"/>
+    <rect x="1032" y="345" width="12" height="45" rx="2"/>
+    <rect x="1048" y="330" width="12" height="60" rx="2"/>
+    <rect x="1064" y="338" width="12" height="52" rx="2"/>
+    <rect x="1080" y="318" width="12" height="72" rx="2"/>
+    <rect x="1096" y="342" width="12" height="48" rx="2"/>
+    <rect x="1112" y="328" width="12" height="62" rx="2"/>
+    <rect x="1128" y="336" width="12" height="54" rx="2"/>
+    <rect x="1144" y="350" width="12" height="40" rx="2"/>
+    <rect x="1160" y="334" width="12" height="56" rx="2"/>
+  </g>
+
+  <text x="936" y="410" font-family="monospace" font-size="9" fill="#64748b" letter-spacing="3">EVENT LOG</text>
+  <text x="936" y="432" font-family="monospace" font-size="10" fill="#10b981" fill-opacity="0.8">[04:21:08] YOLO_NMS_COMPLETE</text>
+  <text x="936" y="452" font-family="monospace" font-size="10" fill="#475569">[04:21:08] ANCHOR_GRID_FLUSH</text>
+  <text x="936" y="472" font-family="monospace" font-size="10" fill="#3b82f6">[04:21:09] BBOX_COMMIT_3</text>
+  <text x="936" y="492" font-family="monospace" font-size="10" fill="#475569">[04:21:09] FRAME_BUFFER_SWAP</text>
+
+  <!-- FOOTER -->
+  <rect x="0" y="652" width="1200" height="48" fill="#070709"/>
+  <rect x="0" y="652" width="1200" height="1" fill="#ffffff" fill-opacity="0.05"/>
+  <text x="16" y="681" font-family="monospace" font-size="10" fill="#64748b">GPU_TEMP: <tspan fill="#10b981">48.2°C</tspan></text>
+  <text x="180" y="681" font-family="monospace" font-size="10" fill="#64748b">UPTIME: <tspan fill="#94a3b8">112:14:02:44</tspan></text>
+  <circle cx="900" cy="676" r="3" fill="#3b82f6"/>
+  <text x="910" y="681" font-family="monospace" font-size="10" fill="#475569">Streaming Telemetry: TLS 1.3 Encryption Active</text>
+</svg>
