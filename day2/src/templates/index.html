@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA // PAPER - AI Research Tracker</title>
+    <!-- Google Fonts: Sora (for headings) & Inter (for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="stars-bg"></div>
+    <div class="glowing-orb orb-1"></div>
+    <div class="glowing-orb orb-2"></div>
+    
+    <div class="container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-bolt-lightning"></i>
+                </div>
+                <div class="logo-text">
+                    <h1>AURA<span>//</span>PAPER</h1>
+                    <p class="tagline">Real-time AI/ML Research Aggregator</p>
+                </div>
+            </div>
+            
+            <div class="action-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search papers, authors, categories..." autocomplete="off">
+                    <button id="clear-search-btn" class="clear-btn" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                
+                <button id="refresh-btn" class="btn btn-primary" title="Fetch latest papers">
+                    <i class="fa-solid fa-arrows-rotate spinner-icon"></i>
+                    <span>Refresh</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar glass-panel">
+            <div class="stat-item">
+                <i class="fa-solid fa-file-invoice text-blue"></i>
+                <div>
+                    <span class="stat-value" id="stat-total">0</span>
+                    <span class="stat-label">Total Cached</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-bookmark text-pink"></i>
+                <div>
+                    <span class="stat-value" id="stat-bookmarks">0</span>
+                    <span class="stat-label">Bookmarks</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-brands fa-hugging-face text-yellow"></i>
+                <div>
+                    <span class="stat-value" id="stat-hf">0</span>
+                    <span class="stat-label">Hugging Face Daily</span>
+                </div>
+            </div>
+            <div class="stat-item">
+                <i class="fa-solid fa-flask text-cyan"></i>
+                <div>
+                    <span class="stat-value" id="stat-labs">0</span>
+                    <span class="stat-label">AI Labs</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs-container">
+            <ul class="nav-tabs">
+                <li class="tab-item active" data-source="all">
+                    <i class="fa-solid fa-globe"></i>
+                    <span>All Papers</span>
+                </li>
+                <li class="tab-item" data-source="arxiv">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span>arXiv Feed</span>
+                </li>
+                <li class="tab-item" data-source="huggingface">
+                    <i class="fa-brands fa-hugging-face"></i>
+                    <span>HF Daily</span>
+                </li>
+                <li class="tab-item" data-source="ailabs">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Major Labs</span>
+                </li>
+                <li class="tab-item" data-source="bookmarks">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Bookmarks</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast glass-panel">
+            <i class="fa-solid fa-circle-info toast-icon"></i>
+            <span id="toast-message">Notification message</span>
+        </div>
+
+        <!-- Main Papers Feed -->
+        <main class="papers-feed">
+            <!-- Loading Spinner State -->
+            <div id="feed-loading" class="feed-status" style="display: none;">
+                <div class="loader">
+                    <div class="inner one"></div>
+                    <div class="inner two"></div>
+                    <div class="inner three"></div>
+                </div>
+                <p>Retrieving AI research papers...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div id="feed-empty" class="feed-status" style="display: none;">
+                <div class="empty-icon">
+                    <i class="fa-solid fa-folder-open"></i>
+                </div>
+                <h3 id="empty-title">No papers found</h3>
+                <p id="empty-desc">Try refreshing or adjusting your search term.</p>
+                <button id="empty-action-btn" class="btn btn-secondary mt-3">Reset Filters</button>
+            </div>
+
+            <!-- Cards Grid Container -->
+            <div id="papers-grid" class="papers-grid">
+                <!-- Cards will be dynamically injected here by JS -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>&copy; 2026 AuraPaper. Built with Flask, SQLite, and custom Glassmorphism UI.</p>
+            <p class="footer-links">
+                <a href="https://arxiv.org" target="_blank"><i class="fa-solid fa-graduation-cap"></i> arXiv</a> &bull; 
+                <a href="https://huggingface.co/papers" target="_blank"><i class="fa-brands fa-hugging-face"></i> HF Papers</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
