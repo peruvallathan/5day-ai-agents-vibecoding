@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" role="img">
+  <title>ADK Playground — Customer Support Agent — "How long does standard delivery take?"</title>
+  <desc>Google Agent Development Kit 2.2.0 Playground UI showing the customer support workflow routing a shipping query to the FAQ agent</desc>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#1a1a1a" rx="10"/>
+
+  <!-- Title bar -->
+  <rect width="900" height="46" fill="#111111" rx="10"/>
+  <rect y="10" width="900" height="36" fill="#111111"/>
+  <circle cx="22" cy="23" r="5" fill="#E24B4A"/>
+  <circle cx="38" cy="23" r="5" fill="#EF9F27"/>
+  <circle cx="54" cy="23" r="5" fill="#4caf50"/>
+  <rect x="70" y="12" width="22" height="22" rx="4" fill="#2196f3"/>
+  <text x="81" y="26" font-family="monospace" font-size="11" fill="#fff" text-anchor="middle">⬡</text>
+  <text x="100" y="26" font-family="sans-serif" font-size="12" font-weight="500" fill="#ffffff">Agent Development Kit 2.2.0</text>
+  <rect x="260" y="12" width="72" height="22" rx="5" fill="#222" stroke="#333" stroke-width="0.5"/>
+  <text x="296" y="26" font-family="sans-serif" font-size="11" fill="#ccc" text-anchor="middle">📱 app ▾</text>
+  <rect x="340" y="12" width="200" height="22" rx="5" fill="#1a3a5c" stroke="#2196f3" stroke-width="0.8"/>
+  <text x="360" y="26" font-family="sans-serif" font-size="11" fill="#90caf9">💬 How long does standard...</text>
+  <rect x="550" y="12" width="100" height="22" rx="5" fill="#222" stroke="#333" stroke-width="0.5"/>
+  <text x="600" y="26" font-family="sans-serif" font-size="11" fill="#ccc" text-anchor="middle">+ New Session</text>
+  <text x="860" y="26" font-family="sans-serif" font-size="14" fill="#aaa">☀</text>
+  <text x="880" y="26" font-family="sans-serif" font-size="14" fill="#aaa">👤</text>
+
+  <!-- Left panel background -->
+  <rect x="0" y="46" width="320" height="534" fill="#111111"/>
+  <rect x="320" y="46" width="1" height="534" fill="#2a2a2a"/>
+
+  <!-- Left tabs -->
+  <rect x="0" y="46" width="320" height="36" fill="#111"/>
+  <text x="22" y="69" font-family="sans-serif" font-size="12" fill="#2196f3">Info</text>
+  <rect x="14" y="79" width="28" height="2" fill="#2196f3"/>
+  <text x="72" y="69" font-family="sans-serif" font-size="12" fill="#666">State</text>
+  <text x="122" y="69" font-family="sans-serif" font-size="12" fill="#666">Artifacts</text>
+  <text x="188" y="69" font-family="sans-serif" font-size="12" fill="#666">Evals</text>
+  <rect x="0" y="81" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Event nav -->
+  <rect x="0" y="82" width="320" height="28" fill="#111"/>
+  <text x="16" y="100" font-family="sans-serif" font-size="11" fill="#555">‹  ›</text>
+  <text x="50" y="100" font-family="sans-serif" font-size="11" fill="#ccc">Event 21 of 21</text>
+  <rect x="0" y="110" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Invocation -->
+  <rect x="0" y="110" width="320" height="26" fill="#111"/>
+  <text x="16" y="127" font-family="sans-serif" font-size="11" fill="#888">Invocation: </text>
+  <text x="88" y="127" font-family="sans-serif" font-size="11" fill="#90caf9">#7 (How long does standard delivery ta…</text>
+  <rect x="0" y="136" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Workflow Graph -->
+  <!-- START node -->
+  <rect x="110" y="160" width="100" height="34" rx="17" fill="#4caf50"/>
+  <text x="160" y="182" font-family="sans-serif" font-size="12" font-weight="500" fill="#fff" text-anchor="middle">START</text>
+
+  <!-- Arrow START → save_query -->
+  <line x1="160" y1="194" x2="160" y2="218" stroke="#4caf50" stroke-width="1.5"/>
+  <polygon points="155,214 160,222 165,214" fill="#4caf50"/>
+
+  <!-- save_query node -->
+  <rect x="90" y="222" width="140" height="34" rx="6" fill="#1b5e20" stroke="#4caf50" stroke-width="1"/>
+  <text x="110" y="237" font-family="monospace" font-size="10" fill="#888">ƒ</text>
+  <text x="160" y="244" font-family="sans-serif" font-size="11" font-weight="500" fill="#a5d6a7" text-anchor="middle">save_query</text>
+
+  <!-- Arrow save_query → categorize -->
+  <line x1="160" y1="256" x2="160" y2="280" stroke="#4caf50" stroke-width="1.5"/>
+  <polygon points="155,276 160,284 165,276" fill="#4caf50"/>
+
+  <!-- categorize node -->
+  <rect x="90" y="284" width="140" height="34" rx="6" fill="#1b5e20" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="108" y="299" font-family="monospace" font-size="10" fill="#4caf50">✦</text>
+  <text x="165" y="306" font-family="sans-serif" font-size="11" font-weight="500" fill="#a5d6a7" text-anchor="middle">categorize</text>
+
+  <!-- Arrow categorize → route_inquiry -->
+  <line x1="160" y1="318" x2="160" y2="342" stroke="#4caf50" stroke-width="1.5"/>
+  <polygon points="155,338 160,346 165,338" fill="#4caf50"/>
+
+  <!-- route_inquiry diamond -->
+  <polygon points="160,342 210,372 160,402 110,372" fill="#1a1a2e" stroke="#555" stroke-width="1"/>
+  <text x="160" y="370" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">ƒ route_inquiry</text>
+  <text x="160" y="384" font-family="sans-serif" font-size="9" fill="#f59e0b" text-anchor="middle">⚠ NO DEFAULT</text>
+
+  <!-- Arrow → shipping (left) -->
+  <line x1="110" y1="372" x2="68" y2="418" stroke="#555" stroke-width="1.2"/>
+  <polygon points="63,414 68,422 73,415" fill="#555"/>
+  <text x="72" y="412" font-family="sans-serif" font-size="9" fill="#666">shipping</text>
+
+  <!-- Arrow → unrelated (right) -->
+  <line x1="210" y1="372" x2="252" y2="418" stroke="#555" stroke-width="1.2"/>
+  <polygon points="247,415 252,422 257,414" fill="#555"/>
+  <text x="228" y="412" font-family="sans-serif" font-size="9" fill="#666">unrelated</text>
+
+  <!-- shipping_faq node -->
+  <rect x="14" y="422" width="108" height="30" rx="5" fill="#1b3a2e" stroke="#4caf50" stroke-width="1"/>
+  <text x="30" y="435" font-family="monospace" font-size="9" fill="#4caf50">✦</text>
+  <text x="68" y="442" font-family="sans-serif" font-size="10" fill="#a5d6a7" text-anchor="middle">shipping_faq</text>
+
+  <!-- handle_unrelated node -->
+  <rect x="198" y="422" width="108" height="30" rx="5" fill="#222" stroke="#444" stroke-width="1"/>
+  <text x="215" y="435" font-family="monospace" font-size="9" fill="#666">ƒ</text>
+  <text x="252" y="442" font-family="sans-serif" font-size="10" fill="#777" text-anchor="middle">handle_unrelated</text>
+
+  <!-- Arrows to END -->
+  <line x1="68" y1="452" x2="140" y2="490" stroke="#555" stroke-width="1.2"/>
+  <line x1="252" y1="452" x2="180" y2="490" stroke="#555" stroke-width="1.2"/>
+  <polygon points="135,487 140,495 145,487" fill="#555"/>
+  <polygon points="175,487 180,495 185,487" fill="#555"/>
+
+  <!-- END node -->
+  <rect x="120" y="494" width="80" height="28" rx="14" fill="#222" stroke="#444" stroke-width="1"/>
+  <text x="160" y="512" font-family="sans-serif" font-size="11" fill="#666" text-anchor="middle">END</text>
+
+  <!-- RIGHT PANEL -->
+  <!-- Top bar with tabs -->
+  <rect x="321" y="46" width="579" height="36" fill="#111"/>
+  <rect x="330" y="57" width="62" height="22" rx="11" fill="#1a3a5c" stroke="#2196f3" stroke-width="0.8"/>
+  <text x="361" y="72" font-family="sans-serif" font-size="11" fill="#90caf9" text-anchor="middle">Events</text>
+  <text x="410" y="72" font-family="sans-serif" font-size="11" fill="#666">Traces</text>
+  <text x="460" y="72" font-family="sans-serif" font-size="11" fill="#666">+ Filter</text>
+  <text x="860" y="72" font-family="sans-serif" font-size="13" fill="#555">↻ ⋮</text>
+  <rect x="321" y="82" width="579" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Event #19 — user message -->
+  <text x="360" y="108" font-family="sans-serif" font-size="11" fill="#555">#19</text>
+  <rect x="530" y="92" width="308" height="30" rx="14" fill="#2196f3"/>
+  <text x="684" y="111" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">How long does standard delivery take?</text>
+  <circle cx="856" cy="108" r="14" fill="#2196f3"/>
+  <text x="856" y="113" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">👤</text>
+
+  <!-- Event #20 — save_query -->
+  <text x="360" y="155" font-family="sans-serif" font-size="11" fill="#555">#20</text>
+  <circle cx="390" cy="150" r="13" fill="#4caf50"/>
+  <text x="390" y="155" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+  <rect x="410" y="136" width="260" height="28" rx="4" fill="#1a2a1a" stroke="#2a3a2a" stroke-width="0.5"/>
+  <text x="424" y="148" font-family="sans-serif" font-size="11" fill="#888" font-style="italic">"How long does standard delivery take?"</text>
+  <rect x="413" y="154" width="148" height="18" rx="3" fill="#111"/>
+  <text x="420" y="166" font-family="monospace" font-size="10" fill="#888">⚙ State: <tspan fill="#90caf9">user_query</tspan></text>
+
+  <!-- Event #21 — agent response -->
+  <text x="360" y="215" font-family="sans-serif" font-size="11" fill="#555">#21</text>
+  <circle cx="390" cy="210" r="13" fill="#4caf50"/>
+  <text x="390" y="215" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">C</text>
+
+  <rect x="410" y="192" width="440" height="98" rx="4" fill="#0d2a0d" stroke="#2e5e2e" stroke-width="0.5"/>
+  <text x="420" y="208" font-family="sans-serif" font-size="9" font-weight="500" fill="#4caf50" letter-spacing="0.05em">SHIPPING_FAQ AGENT</text>
+  <text x="420" y="226" font-family="sans-serif" font-size="12" fill="#c8e6c9">Standard delivery takes </text>
+  <text x="563" y="226" font-family="sans-serif" font-size="12" fill="#81c784" font-weight="500">3–5 business days.</text>
+  <text x="420" y="245" font-family="sans-serif" font-size="12" fill="#c8e6c9">If you need your package sooner, express delivery</text>
+  <text x="420" y="263" font-family="sans-serif" font-size="12" fill="#c8e6c9">arrives within </text>
+  <text x="505" y="263" font-family="sans-serif" font-size="12" fill="#81c784" font-weight="500">1–2 business days.</text>
+  <text x="420" y="282" font-family="sans-serif" font-size="12" fill="#c8e6c9">Anything else I can help with?</text>
+
+  <!-- Suggested replies -->
+  <rect x="410" y="300" width="140" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="480" y="315" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">What are shipping rates?</text>
+  <rect x="558" y="300" width="130" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="623" y="315" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">How do I track my order?</text>
+  <rect x="696" y="300" width="120" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="756" y="315" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">Return policy?</text>
+
+  <!-- Bottom input bar -->
+  <rect x="321" y="534" width="579" height="46" fill="#111" stroke="#2a2a2a" stroke-width="0.5"/>
+  <rect x="321" y="534" width="579" height="0.5" fill="#2a2a2a"/>
+  <text x="344" y="562" font-family="sans-serif" font-size="15" fill="#555">+</text>
+  <rect x="362" y="543" width="460" height="28" rx="14" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="380" y="561" font-family="sans-serif" font-size="12" fill="#555">Type a message...</text>
+  <circle cx="852" cy="557" r="14" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="852" y="562" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">📞</text>
+  <circle cx="882" cy="557" r="14" fill="#2196f3"/>
+  <text x="882" y="562" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">➤</text>
+
+  <!-- Status footer strip -->
+  <rect x="0" y="46" width="320" height="0.5" fill="#2a2a2a"/>
+</svg>
