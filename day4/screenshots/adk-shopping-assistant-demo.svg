@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580">
+  <title>ADK Playground — Shopping Assistant — Discount Redemption</title>
+
+  <!-- Background -->
+  <rect width="900" height="580" fill="#1a1a1a" rx="10"/>
+
+  <!-- Title bar -->
+  <rect width="900" height="46" fill="#111" rx="10"/>
+  <rect y="10" width="900" height="36" fill="#111"/>
+  <circle cx="22" cy="23" r="5" fill="#E24B4A"/>
+  <circle cx="38" cy="23" r="5" fill="#EF9F27"/>
+  <circle cx="54" cy="23" r="5" fill="#4caf50"/>
+  <rect x="70" y="12" width="22" height="22" rx="4" fill="#2196f3"/>
+  <text x="81" y="27" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">⬡</text>
+  <text x="100" y="29" font-family="sans-serif" font-size="12" font-weight="500" fill="#fff">Agent Development Kit 2.2.0</text>
+  <rect x="260" y="12" width="60" height="22" rx="5" fill="#222" stroke="#333" stroke-width="0.5"/>
+  <text x="290" y="27" font-family="sans-serif" font-size="11" fill="#ccc" text-anchor="middle">📱 app ▾</text>
+  <rect x="330" y="12" width="220" height="22" rx="5" fill="#1a3a5c" stroke="#2196f3" stroke-width="0.8"/>
+  <text x="440" y="27" font-family="sans-serif" font-size="11" fill="#90caf9" text-anchor="middle">💬 Can you redeem the di...</text>
+  <rect x="560" y="12" width="100" height="22" rx="5" fill="#222" stroke="#333" stroke-width="0.5"/>
+  <text x="610" y="27" font-family="sans-serif" font-size="11" fill="#ccc" text-anchor="middle">+ New Session</text>
+  <text x="860" y="29" font-family="sans-serif" font-size="14" fill="#aaa">☀</text>
+  <text x="880" y="29" font-family="sans-serif" font-size="14" fill="#aaa">👤</text>
+
+  <!-- Left sidebar -->
+  <rect x="0" y="46" width="320" height="534" fill="#111"/>
+  <rect x="320" y="46" width="1" height="534" fill="#2a2a2a"/>
+
+  <!-- Left tabs -->
+  <text x="22" y="72" font-family="sans-serif" font-size="12" fill="#2196f3">Info</text>
+  <rect x="14" y="79" width="28" height="2" fill="#2196f3"/>
+  <text x="72" y="72" font-family="sans-serif" font-size="12" fill="#666">State</text>
+  <text x="122" y="72" font-family="sans-serif" font-size="12" fill="#666">Artifacts</text>
+  <text x="188" y="72" font-family="sans-serif" font-size="12" fill="#666">Evals</text>
+  <rect x="0" y="81" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Event nav -->
+  <text x="16" y="103" font-family="sans-serif" font-size="11" fill="#555">‹  ›</text>
+  <text x="50" y="103" font-family="sans-serif" font-size="11" fill="#ccc">Event 8 of 8</text>
+  <rect x="0" y="110" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Invocation label -->
+  <text x="16" y="130" font-family="sans-serif" font-size="11" fill="#888">Invocation: </text>
+  <text x="88" y="130" font-family="sans-serif" font-size="11" fill="#90caf9">#4 (Can you redeem the discount code ...</text>
+  <rect x="0" y="138" width="320" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Workflow Graph — shopping_assistant + redeem_discount tool -->
+  <!-- shopping_assistant node -->
+  <rect x="90" y="190" width="140" height="38" rx="6" fill="#1b5e20" stroke="#4caf50" stroke-width="1.5"/>
+  <text x="108" y="205" font-family="monospace" font-size="10" fill="#4caf50">✦</text>
+  <text x="160" y="214" font-family="sans-serif" font-size="11" font-weight="500" fill="#a5d6a7" text-anchor="middle">shopping_assistant</text>
+
+  <!-- Dashed arrow to tool -->
+  <line x1="160" y1="228" x2="160" y2="270" stroke="#555" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="155,266 160,274 165,266" fill="#555"/>
+
+  <!-- redeem_discount tool node -->
+  <rect x="90" y="274" width="140" height="36" rx="5" fill="#2a2a2a" stroke="#444" stroke-width="1"/>
+  <rect x="92" y="276" width="16" height="16" rx="2" fill="#333" stroke="#555" stroke-width="0.5"/>
+  <text x="100" y="287" font-family="monospace" font-size="8" fill="#888" text-anchor="middle">□</text>
+  <text x="165" y="297" font-family="sans-serif" font-size="11" fill="#888" text-anchor="middle">redeem_discount</text>
+
+  <!-- Success badge -->
+  <rect x="104" y="322" width="112" height="20" rx="10" fill="#1b3a1b" stroke="#4caf50" stroke-width="0.8"/>
+  <text x="160" y="335" font-family="sans-serif" font-size="10" fill="#4caf50" text-anchor="middle">✓ Code Redeemed</text>
+
+  <!-- RIGHT PANEL -->
+  <rect x="321" y="46" width="579" height="534" fill="#1a1a1a"/>
+
+  <!-- Events / Traces tabs -->
+  <rect x="321" y="46" width="579" height="36" fill="#111"/>
+  <rect x="330" y="57" width="62" height="22" rx="11" fill="#1a3a5c" stroke="#2196f3" stroke-width="0.8"/>
+  <text x="361" y="72" font-family="sans-serif" font-size="11" fill="#90caf9" text-anchor="middle">Events</text>
+  <text x="410" y="72" font-family="sans-serif" font-size="11" fill="#666">Traces</text>
+  <text x="460" y="72" font-family="sans-serif" font-size="11" fill="#666">+ Filter</text>
+  <text x="860" y="72" font-family="sans-serif" font-size="13" fill="#555">↻ ⋮</text>
+  <rect x="321" y="82" width="579" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Event #1 — user message -->
+  <text x="348" y="115" font-family="sans-serif" font-size="11" fill="#555">#1</text>
+  <rect x="490" y="97" width="360" height="30" rx="14" fill="#2196f3"/>
+  <text x="670" y="116" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">Can you redeem the discount code WELCOME50 for user user_123?</text>
+  <circle cx="862" cy="112" r="14" fill="#2196f3"/>
+  <text x="862" y="117" font-family="sans-serif" font-size="11" fill="#fff" text-anchor="middle">👤</text>
+
+  <!-- Event #2 — tool call -->
+  <text x="348" y="160" font-family="sans-serif" font-size="11" fill="#555">#2</text>
+  <circle cx="376" cy="155" r="13" fill="#4caf50"/>
+  <text x="376" y="160" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+  <rect x="396" y="142" width="440" height="26" rx="4" fill="#1a2a1a" stroke="#2a3a2a" stroke-width="0.5"/>
+  <text x="404" y="152" font-family="monospace" font-size="10" fill="#888">→ Tool call: </text>
+  <text x="476" y="152" font-family="monospace" font-size="10" fill="#90caf9">redeem_discount</text>
+  <text x="404" y="163" font-family="monospace" font-size="10" fill="#666">  user_id="user_123"  code="WELCOME50"</text>
+
+  <!-- Event #3 — tool result -->
+  <text x="348" y="202" font-family="sans-serif" font-size="11" fill="#555">#3</text>
+  <circle cx="376" cy="197" r="13" fill="#4caf50"/>
+  <text x="376" y="202" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">S</text>
+  <rect x="396" y="184" width="440" height="26" rx="4" fill="#1a2a1a" stroke="#2a3a2a" stroke-width="0.5"/>
+  <text x="404" y="194" font-family="monospace" font-size="10" fill="#888">← Tool result: </text>
+  <text x="404" y="205" font-family="monospace" font-size="10" fill="#4caf50">Success: Discount code 'WELCOME50' has been successfully redeemed for user 'user_123'.</text>
+
+  <!-- Event #4 — agent final response -->
+  <text x="348" y="248" font-family="sans-serif" font-size="11" fill="#555">#4</text>
+  <circle cx="376" cy="243" r="13" fill="#4caf50"/>
+  <text x="376" y="248" font-family="sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">C</text>
+  <rect x="396" y="228" width="440" height="90" rx="4" fill="#0d2a0d" stroke="#2e5e2e" stroke-width="0.5"/>
+  <text x="406" y="244" font-family="sans-serif" font-size="9" font-weight="500" fill="#4caf50" letter-spacing="0.05em">SHOPPING_ASSISTANT</text>
+  <text x="406" y="262" font-family="sans-serif" font-size="12" fill="#c8e6c9">Great news! I've successfully redeemed discount code</text>
+  <text x="406" y="279" font-family="sans-serif" font-size="12" fill="#81c784" font-weight="500">WELCOME50</text>
+  <text x="476" y="279" font-family="sans-serif" font-size="12" fill="#c8e6c9"> for user </text>
+  <text x="533" y="279" font-family="sans-serif" font-size="12" fill="#81c784" font-weight="500">user_123</text>
+  <text x="590" y="279" font-family="sans-serif" font-size="12" fill="#c8e6c9">.</text>
+  <text x="406" y="297" font-family="sans-serif" font-size="12" fill="#c8e6c9">The discount has been applied and the code is now marked as used.</text>
+  <text x="406" y="314" font-family="sans-serif" font-size="12" fill="#c8e6c9">Is there anything else I can help you with?</text>
+
+  <!-- Divider -->
+  <rect x="336" y="336" width="544" height="0.5" fill="#2a2a2a"/>
+
+  <!-- Security note box -->
+  <rect x="396" y="348" width="440" height="60" rx="6" fill="#1a1a0d" stroke="#f59e0b" stroke-width="0.8"/>
+  <text x="406" y="364" font-family="sans-serif" font-size="9" font-weight="500" fill="#f59e0b" letter-spacing="0.05em">🔐 SECURITY NOTE — STRIDE THREAT MODEL APPLIED</text>
+  <text x="406" y="381" font-family="sans-serif" font-size="11" fill="#d4b483">user_id verified from request context · code validated before mutation</text>
+  <text x="406" y="397" font-family="sans-serif" font-size="11" fill="#d4b483">single-use enforcement · audit trail logged · input schema validated</text>
+
+  <!-- Suggested follow-ups -->
+  <rect x="396" y="424" width="155" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="474" y="439" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">What products do you have?</text>
+  <rect x="558" y="424" width="120" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="618" y="439" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">Do I have other codes?</text>
+  <rect x="684" y="424" width="150" height="22" rx="11" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="759" y="439" font-family="sans-serif" font-size="10" fill="#888" text-anchor="middle">Redeem SUMMER20 too</text>
+
+  <!-- Bottom input -->
+  <rect x="321" y="534" width="579" height="46" fill="#111"/>
+  <rect x="321" y="534" width="579" height="0.5" fill="#2a2a2a"/>
+  <text x="344" y="562" font-family="sans-serif" font-size="15" fill="#555">+</text>
+  <rect x="362" y="543" width="460" height="28" rx="14" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="380" y="561" font-family="sans-serif" font-size="12" fill="#555">Type a message...</text>
+  <circle cx="852" cy="557" r="14" fill="#1e1e1e" stroke="#333" stroke-width="0.5"/>
+  <text x="852" y="562" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">📞</text>
+  <circle cx="882" cy="557" r="14" fill="#2196f3"/>
+  <text x="882" y="562" font-family="sans-serif" font-size="12" fill="#fff" text-anchor="middle">➤</text>
+</svg>

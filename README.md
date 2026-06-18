@@ -13,7 +13,7 @@
 | [Day 1](./day1/README.md) | Introduction to Agents & Vibe Coding — Build & Deploy with AI Studio | ✅ Complete |
 | [Day 2](./day2/README.md) | Agentic CLI Tools — Build a Real-Time AI Research Aggregator (AURA//PAPER) | ✅ Complete |
 | [Day 3](./day3/README.md) | AI Agents in Practice — Customer Support Agent with Google ADK 2.2.0 | ✅ Complete |
-| [Day 4](./day4/README.md) | TBA | 🔜 Coming Soon |
+| [Day 4](./day4/README.md) | Agent Security & Evaluation — STRIDE Threat Modeling + Secure Expense Approval Agent | ✅ Complete |
 | [Day 5](./day5/README.md) | TBA | 🔜 Coming Soon |
 
 ---
