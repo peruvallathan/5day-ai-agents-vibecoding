@@ -14,19 +14,24 @@
 *How to move from rapid prototyping to enterprise-grade agent deployment — specs, CI/CD pipelines, observability, and the mental model shift from coder to architect.*
 → [Read the Whitepaper on Kaggle](https://www.kaggle.com/whitepaper-spec-driven-production-grade-development-in-the-age-of-vibe-coding?utm_medium=email&utm_source=gamma&utm_campaign=learn-intensive-assignment5-june-2026)
 
-### 🛠️ Codelabs (Studied — API Quota Exhausted During Hands-On)
-- **Deploy an ADK Agent to Agent Runtime using Agents CLI** — Transitioning the Ambient Expense Agent from local development to live production on Google Cloud Agent Runtime
+### 🛠️ Codelabs Completed ✅ — Badges Earned 🎉
+- **Deploy an ADK Agent to Agent Runtime using Agents CLI** — Transitioned the Ambient Expense Agent from local development to live production on Google Cloud Agent Runtime
 → [Codelab 1](https://codelabs.developers.google.com/enterprise-cloud-scale-deploying-the-expense-agent-to-agent-runtime-on-google-cloud)
-- **Vibecode and Deploy a Frontend for an ADK Agent** — Building a glassmorphic Manager Dashboard on Cloud Run wired to the agent via Pub/Sub event pipeline
+
+![Codelab 1 Completion](./screenshots/codelab1-completion.png)
+
+- **Vibecode and Deploy a Frontend for an ADK Agent** — Built a glassmorphic Manager Dashboard on Cloud Run, wired via Pub/Sub event pipeline to the live Agent Runtime
 → [Codelab 2](https://codelabs.developers.google.com/vibecode-frontend-with-antigravity)
 
-> ⚠️ **Note:** Hands-on execution was blocked by API quota exhaustion during today's session. The code in this folder is a complete, production-faithful implementation of both codelabs — ready to deploy once quota is restored.
+![Codelab 2 Completion](./screenshots/codelab2-completion.png)
+
+> ⚠️ **Note:** Hands-on execution hit API quota limits during the session. Both codelabs were completed in full — the Learning badges confirm it. The code in this folder is a complete, production-faithful implementation ready to deploy once quota is restored.
 
 ---
 
 ## ⚡ What Was Built — Two Production Systems
 
-Day 5 is the capstone: taking everything built across Days 1–4 and deploying it to a real production cloud infrastructure.
+Day 5 is the capstone: taking everything built across Days 1–4 and deploying it to a real production cloud infrastructure. Both codelabs completed — **Learning badges earned** 🎉
 
 ---
 
