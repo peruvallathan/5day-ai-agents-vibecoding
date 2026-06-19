@@ -1,0 +1,50 @@
+[
+  {
+    "id": "auto_approve_meals",
+    "input": {
+      "amount": 45.0,
+      "submitter": "user@example.com",
+      "category": "meals",
+      "description": "Team lunch",
+      "date": "2026-06-04"
+    },
+    "expected_route": "auto_approve",
+    "expected_status": "approved"
+  },
+  {
+    "id": "hitl_travel",
+    "input": {
+      "amount": 250.0,
+      "submitter": "alice@example.com",
+      "category": "travel",
+      "description": "NYC Flight Tickets",
+      "date": "2026-06-04"
+    },
+    "expected_route": "review_agent",
+    "expected_status": "pending_human"
+  },
+  {
+    "id": "borderline_threshold",
+    "input": {
+      "amount": 100.0,
+      "submitter": "bob@example.com",
+      "category": "software",
+      "description": "SaaS subscription",
+      "date": "2026-06-04"
+    },
+    "expected_route": "review_agent",
+    "expected_status": "pending_human"
+  },
+  {
+    "id": "high_value_luxury",
+    "input": {
+      "amount": 750.0,
+      "submitter": "exec@example.com",
+      "category": "luxury",
+      "description": "Client entertainment",
+      "date": "2026-06-04"
+    },
+    "expected_route": "review_agent",
+    "expected_status": "pending_human"
+  }
+]

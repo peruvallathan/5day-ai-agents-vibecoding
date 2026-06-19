@@ -1,0 +1,15 @@
+{
+  "agent_name": "expense-agent",
+  "display_name": "Ambient Expense Agent",
+  "description": "ADK 2.0 graph workflow — auto-approves claims under $100, HITL for larger expenses.",
+  "deployment_target": "agent_runtime",
+  "region": "us-west1",
+  "runtime_image": "us-west1-docker.pkg.dev/YOUR_PROJECT_ID/expense-agent/app:latest",
+  "agent_runtime_id": "YOUR_AGENT_RUNTIME_ID",
+  "entry_point": "app.agent_runtime_app:fast_api_app",
+  "session_service": "agentengine://",
+  "env_vars": {
+    "GOOGLE_CLOUD_PROJECT": "YOUR_PROJECT_ID",
+    "GOOGLE_CLOUD_REGION": "us-west1"
+  }
+}
